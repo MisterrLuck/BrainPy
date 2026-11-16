@@ -30,6 +30,8 @@ else:
             code = input(": ")
             if code in ["quit", "exit", "quit()", "exit()"]:
                 break
+            if code in ["clear", "clear()"]:
+                brain = Brain()
 
             brain.run(code)
             brain.debug()
